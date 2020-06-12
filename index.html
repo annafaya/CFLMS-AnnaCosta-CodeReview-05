@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://kit.fontawesome.com/797356307c.js"></script>
+    <title>Movie Factory</title>
+</head>
+<header>
+    <div id="header">
+        <h1 class="title"> MOVIE FACTORY </h1>
+    </div>
+    <nav class="nav">
+        <ul>
+           
+                <a href="index.html">HOME</a>
+          
+        </ul>
+    </nav>
+</header>
+<!--end header-->
+<!--body begins-->
+
+<body>
+    <div class="title">
+        <h2>Brazilian Movies</h2>
+        <h3 id="sort">Sort</h3>
+    </div>
+    <div class="bigdiv">
+        <div class="row">
+            <div class="imgbox">
+                <div class="img">
+                    <img class="poster" src="img/chico.jpg" alt="poster 5x Chico">
+                    <div class="info">
+                    </div>
+                    <div class="btn">
+                          <button class="far fa-heart" type="button" id="countButton"></button>
+                    <p><span id="displayCount"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="imgbox">
+                <div class="img">
+                    <img class="poster" src="img/unicornio.jpg" alt="poster Unicórnio">
+                    <div class="info">
+                    </div>
+                    <div class="btn">
+                        <button class="far fa-heart" type="button" id="countButton"></button>
+                        <p><span id="displayCount"></span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="imgbox">
+            <div class="img">
+                <img class="poster" src="img/cidadededeus.jpg" alt="poster Cidade de Deus">
+                <div class="info">
+                </div>
+                <div class="btn">
+                    <button class="far fa-heart" type="button" id="countButton"></button>
+                    <p><span id="displayCount"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="imgbox">
+            <div class="img">
+                <img class="poster" src="img/lisbela.jpg" alt="poster Lisbela e o Prisioneiro">
+                <div class="info">
+                </div>
+                <div class="btn">
+                    <button class="far fa-heart" type="button" id="countButton"></button>
+                    <p><span id="displayCount"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="imgbox">
+            <div class="img">
+                <img class="poster" src="img/oauto.jpg" alt="poster O Auto da Compadecida">
+                <div class="info">
+                </div>
+                <div class="btn">
+                    <button class="far fa-heart" type="button" id="countButton"></button>
+                    <p><span id="displayCount"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="imgbox">
+            <div class="img">
+                <img class="poster" src="img/bacurau.jpeg" alt="poster Bacurau">
+                <div class="info">
+                </div>
+                <div class="btn">
+                   
+                    <button class="far fa-heart" type="button" id="countButton"></button>
+                    <p><span id="displayCount"></span></p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <header>
+        <div id="header">
+            <h1 class="title"> MOVIE FACTORY </h1>
+        </div>
+        <nav class="nav">
+            <ul>
+               
+                    <p>created by Anna</p>
+              
+            </ul>
+        </nav>
+    </header>
+<script>
+    var btn = document.getElementById('button');
+
+var count = 0;
+      var button = document.getElementById("countButton");
+      var display = document.getElementById("displayCount");
+
+      button.onclick = function(){
+        count++;
+        display.innerHTML = count;
+      }
+</script>    
+
+    
+    
+    <script type="application/x-javascript" src="js/list.js">
+
+</body>
+
+</html>

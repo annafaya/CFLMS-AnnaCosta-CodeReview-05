@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+   ;
+}
+
+#header {
+background-color: steelblue;
+padding: 2vw;
+}
+#header h1 {
+    text-align: center;
+    color: bisque;
+    font-weight: bolder;
+}
+
+nav {
+background-color: rgb(138, 176, 190);
+padding: 1vw;
+}
+
+.nav a {
+    text-decoration: none;
+    color:bisque;
+    font-weight: bolder;
+}
+
+h2 {
+    text-align: center;
+    padding: 1vw;
+}
+
+.title h2, #sort {
+display: inline-flex;
+    padding: 1vw;
+}
+#sort {
+    float: right;
+    margin-right: 1vw;
+}
+img {
+    height: auto;
+    width:40%;
+    border-radius: 0.2vw;
+}
+
+.bigdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: auto;
+    padding: 2vw;
+    width: 100;
+}
+.imgbox {
+display: flex;
+flex-direction: row;
+width: 90%;
+justify-content: center;
+
+
+
+}
+    
+body {
+    background-color: lavender; 
+    
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 2vw, 0vw;
+    background-color: aliceblue;
+    border-radius: 0.5vw;
+    border-style: solid;
+    border-color: teal;
+
+
+}
+.btn {
+    padding: 0.2vw;
+    height: 3vw;
+}
+#countButton:hover {
+    color: lavender;
+}
+#countButton {
+padding: 0.9vw;
+box-shadow: 0 2px 8px cornflowerblue;
+border: none;
+border-radius: 50px;
+background-color: rgb(240, 70, 104);
+}
+
+#countButton, #displayCount {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+ 
+}
+
+#displayCount {
+    background-color: lightcoral;
+    border-radius: 0.5vw;
+    margin-top: 0.2vw;
+}
+.img img {
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.7vw;
+ /*   padding-top: 5vw;*/
+
+}
+.info p {
+    width: 96%;
+}
+
+.img .info {
+    justify-content: center;
+    font-size: 1.2vw;
+    
+}
+
+ul p {
+    text-align: end ;
+}
