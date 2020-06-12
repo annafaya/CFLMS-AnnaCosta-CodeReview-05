@@ -89,9 +89,8 @@ body {
     border-radius: 0.5vw;
     border-style: solid;
     border-color: teal;
-
-
 }
+
 .btn {
     padding: 0.2vw;
     height: 3vw;
@@ -103,7 +102,7 @@ body {
 padding: 0.9vw;
 box-shadow: 0 2px 8px cornflowerblue;
 border: none;
-border-radius: 50px;
+border-radius: 50%;
 background-color: rgb(240, 70, 104);
 }
 
@@ -119,6 +118,7 @@ background-color: rgb(240, 70, 104);
     background-color: lightcoral;
     border-radius: 0.5vw;
     margin-top: 0.2vw;
+    font-size: 1.1vw;
 }
 .img img {
     flex-wrap: wrap;
