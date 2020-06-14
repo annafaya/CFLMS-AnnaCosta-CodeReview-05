@@ -15,9 +15,7 @@
     </div>
     <nav class="nav">
         <ul>
-           
-                <a href="index.html">HOME</a>
-          
+            <a href="index.html">HOME</a>
         </ul>
     </nav>
 </header>
@@ -37,8 +35,8 @@
                     <div class="info">
                     </div>
                     <div class="btn">
-                          <button class="far fa-heart" type="button" id="countButton"></button>
-                    <p><span id="displayCount"></span></p>
+                        <button class="far fa-heart countButton" type="button"></button>
+                        <p><span class="displayCount"></span></p>
                     </div>
                 </div>
             </div>
@@ -48,11 +46,10 @@
                     <div class="info">
                     </div>
                     <div class="btn">
-                        <button class="far fa-heart" type="button" id="countButton"></button>
-                        <p><span id="displayCount"></span></p>
+                        <button class="far fa-heart countButton" type="button"></button>
+                        <p><span class="displayCount"></span></p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -63,8 +60,8 @@
                 <div class="info">
                 </div>
                 <div class="btn">
-                    <button class="far fa-heart" type="button" id="countButton"></button>
-                    <p><span id="displayCount"></span></p>
+                    <button class="far fa-heart countButton" type="button"></button>
+                    <p><span class="displayCount"></span></p>
                 </div>
             </div>
         </div>
@@ -74,8 +71,8 @@
                 <div class="info">
                 </div>
                 <div class="btn">
-                    <button class="far fa-heart" type="button" id="countButton"></button>
-                    <p><span id="displayCount"></span></p>
+                    <button class="far fa-heart countButton" type="button"></button>
+                    <p><span class="displayCount"></span></p>
                 </div>
             </div>
         </div>
@@ -87,8 +84,8 @@
                 <div class="info">
                 </div>
                 <div class="btn">
-                    <button class="far fa-heart" type="button" id="countButton"></button>
-                    <p><span id="displayCount"></span></p>
+                    <button class="far fa-heart countButton" type="button"></button>
+                    <p><span class="displayCount"></span></p>
                 </div>
             </div>
         </div>
@@ -98,10 +95,8 @@
                 <div class="info">
                 </div>
                 <div class="btn">
-                   
-                    <button class="far fa-heart" type="button" id="countButton"></button>
-                    <p><span id="displayCount"></span></p>
-                        
+                    <button class="far fa-heart countButton" type="button"></button>
+                    <p><span class="displayCount"></span></p>
                 </div>
             </div>
         </div>
@@ -113,28 +108,33 @@
         </div>
         <nav class="nav">
             <ul>
-               
-                    <p>created by Anna</p>
-              
+                <p>created by Anna</p>
             </ul>
         </nav>
     </header>
-<script>
-    var btn = document.getElementById('button');
-
-var count = 0;
-      var button = document.getElementById("countButton");
-      var display = document.getElementById("displayCount");
-
-      button.onclick = function(){
-        count++;
-        display.innerHTML = count;
-      }
-</script>    
-   
-    
     <script type="application/x-javascript" src="js/list.js"></script>
+    <script>
+    var count = new Array(info.About.length);
+    //console.log(info.About.length);
 
+    for (let i = 0; i < 6; i++) {
+
+        count[i] = 0;
+        var button = document.getElementsByClassName("countButton");
+        var display = document.getElementsByClassName("displayCount");
+
+
+        button[i].onclick = function() {
+
+            count[i]++;
+
+            display[i].innerHTML = count[i];
+            //console.log(i);
+            //console.log(info.About.length);
+
+        }
+    };
+    </script>
 </body>
 
 </html>
